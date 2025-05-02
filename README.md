@@ -35,14 +35,17 @@ Here are a few examples of the queries used:
 
   SELECT COUNT(*) AS total_sales FROM Sales_table;
 
-Unique customers:
+- Unique customers:
+  ```sql
 SELECT COUNT(DISTINCT customer_id) AS unique_customers FROM Sales_table;
 
-Total sales per category:
+- Total sales per category:
+  ```sql
 SELECT category, SUM(total_sale) AS net_sale FROM Sales_table GROUP BY category;
 
 
-Top 5 highest-spending customers:
+- Top 5 highest-spending customers:
+  ```sql
 SELECT customer_id, SUM(total_sale) AS total_sales
 FROM Sales_table
 GROUP BY customer_id
@@ -50,7 +53,8 @@ ORDER BY total_sales DESC
 LIMIT 5;
 
 
-Best-performing sales month:
+- Best-performing sales month:
+  ```sql
 SELECT year, month, avg_sales
 FROM (
     SELECT 
