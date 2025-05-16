@@ -1,4 +1,4 @@
-# sql_sales_database
+# Postgrel_sql_sales_database
 # 🛒 Retail Sales Data Analysis using PostgreSQL
 
 Project Overview
